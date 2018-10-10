@@ -30,26 +30,23 @@ body {
 /* Style the top navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #000;
 }
 
-/* Style the navigation bar links */
+
+.navbar navbar-title{
+	margin: 0px;
+    padding: 0px;
+}
 .navbar a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 14px 26px;
     text-decoration: none;
-}
-    
-.navbar h1 {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+    font-size:45px;
+
 }
 
 /* Right-aligned link */
@@ -58,7 +55,7 @@ body {
 }
 
 /* Change color on hover */
-.navbar a:hover {
+.navbar a:hover:not(.navbar-title) {
     background-color: #ddd;
     color: black;
 }
@@ -116,20 +113,15 @@ body {
 </head>
 <body>
 
+
+
 <div class="navbar">
-    <h1>Hallowdawn LARP</h1>
+  <a class="navbar-title" href="#"><img height="50" src="https://drive.google.com/uc?id=1fFqt_EJDHGPoGTKde-YfZxrKzTuhK9ov"></a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#" class="right">Link</a>
 </div>
-    
-    
-<div class="header">
-  <h1>My Website</h1>
-  <p>A website created by me.</p>
-</div>
-
 
 <div class="row">
   <div class="side">
@@ -164,4 +156,3 @@ body {
 
 </body>
 </html>
-
