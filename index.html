@@ -10,11 +10,14 @@ ul {
     background-color: #333;
 }
 
-li {
+.navbar {
     float: left;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
-li a {
+.navbar a {
     display: block;
     color: white;
     text-align: center;
@@ -22,14 +25,19 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.navbar a:hover {
     background-color: #111;
 }
+    
+.active{
+    background-color: #4CAF50;    
+    
+}    
 </style>
 </head>
 <body>
 
-<ul>
+<ul class="navbar">
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
