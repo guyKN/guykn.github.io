@@ -41,12 +41,12 @@ img {vertical-align: middle;}
 }
 
 .prev{
-  right: 97%;
+  right: 95%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  left: 97%;
+  left: 95%;
   border-radius: 3px 0 0 3px;
 }
 
