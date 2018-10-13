@@ -51,15 +51,15 @@ body{
  <link rel="stylesheet" href="css/slideshow.css">
 </head>
 <body>
-              
-<div class="fullpage">
-<ul class="navbar">
+ <ul class="navbar">
   <li class="activepage"><a href="#home">Home</a></li>
   <li class="notactive"><a href="#news">Calander</a></li>
   <li class="notactive"><a href="#contact">Resorces</a></li>
   <li class="notactive"><a href="#about">Meet the GMs</a></li>
   <li class="notactive"><a href="#about">About</a></li>
-</ul>      
+</ul>               
+<div class="fullpage">
+    
         <div class="slideshow-container">
 
     <div class="mySlides fade">
@@ -96,6 +96,19 @@ body{
     <h1>extra 6</h1>
 
 <script src="slideshow.js"></script>
+    <script>
+    var body = document.body
+    var html = document.documentElement;
+    var max_height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+    
+    var h = document.getElementByClass("navbar")[0].style.height;
+    var fullpage = getElementByClass("fullpage")
+    fullpage.style.height = max_height-h;
+
+    
+    </script>
 
 </body>
 </html>
