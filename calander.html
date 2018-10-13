@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index:99;
+}
+    
+    
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar  li.notactive a:hover {
+    background-color: #111;
+}
+    
+.activepage{
+    background-color: #4CAF50;   
+}
+    
+.fullpage{
+    width: 100vl;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    
+}
+    
+body{
+    overflow-x:visible;
+    
+}
+    
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color:yellow;
+    text-align: center;
+    font-size: 100px;
+    
+} 
+ 
+.footer {
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+</style>
+ <link rel="stylesheet" href="css/slideshow.css">
+</head>
+<body>
+ <ul class="navbar">
+  <li class="activepage"><a href="#home">Home</a></li>
+  <li class="notactive"><a href="#news">Calander</a></li>
+  <li class="notactive"><a href="#contact">Resorces</a></li>
+  <li class="notactive"><a href="#about">Meet the GMs</a></li>
+  <li class="notactive"><a href="#about">About</a></li>
+</ul>               
 <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qfc3v9khg23573n6dgpnih6540%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <div class="footer"><a href="https://discord.gg/pDAWYG" target="_blank"><img width="40" src="https://discordapp.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg">
+        </a></div>
+
+  </body>
+</html>
+  
+  
+  
