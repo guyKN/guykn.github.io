@@ -11,7 +11,10 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-
+.slideshowimage{
+  width:100%;
+  overflow:hidden;
+}
 
 /* Next & previous buttons */
 .prev, .next {
