@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index:99;
+}
+    
+    
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar  li.notactive a:hover {
+    background-color: #111;
+}
+    
+.activepage{
+    background-color: #4CAF50;   
+}
+    
+.fullpage{
+    width: 100vl;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    
+}
+    
+body{
+    overflow-x:visible;
+    
+}
+    
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color:yellow;
+    text-align: center;
+    font-size: 100px;
+    
+} 
+ 
+.footer {
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+h1, h2, h3{
+	text-align:center;
+}
+</style>
+</head>
+<body>
+          <nav class="navbar navbar-inverse navbar-fixed-top" style="">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#" style="padding:0px"><img src="https://drive.google.com/uc?id=19HmueVt6Y9mf9QRbg8H07VBd2w1XNwyW" height="100%"></a>
+               </div>
+               <ul class="nav navbar-nav">
+                  <li class=""><a href="#">Home</a></li>
+                  <li class="active"><a href="/calander">Calander</a></li>
+                  <li><a href="/resorces">Resorces</a></li>
+                  <li><a href="/about">About</a></li>
+               </ul>
+            </div>
+         </nav>
+           
+<div class="container-fluid">
+	<div class="row">
+    	<h1>Resorces</h1>
+	</div>
+    
+    <div class="row">
+    	
+    	<div class="col-sm-3">
+          <img src="https://www.freeiconspng.com/uploads/open-book-icon-1.png" width="20%" class="center-block">
+          <h3>Rulebook</h3>
+          <p style="text-align:center;"><i>All the rules you need to create a character and more. </i></p>
+          <button type="button" class="btn btn-primary  btn-block">View The Rulebook</button>
+   	</div>
+    
+    	<div class="col-sm-3">
+          <img src="https://discordapp.com/assets/41484d92c876f76b20c7f746221e8151.svg" width="20%" class="center-block">
+          <h3>Discord Server</h3>
+          <p style="text-align:center;"><i>Talk to fellow LARPers on discord.  </i></p>
+          <button type="button" class="btn btn-primary  btn-block">Join the server</button>
+   	</div>
+    
+    <div class="col-sm-3">
+          <img src="https://image.flaticon.com/icons/svg/63/63358.svg" width="20%" class="center-block">
+          <h3>Waiver</h3>
+          <p style="text-align:center;"><i>Sign this before playing LARP for the first time. </i></p>
+          <button type="button" class="btn btn-primary  btn-block">View the waiver</button>
+   	</div>
+    
+    
+        
+</div>
+    
+</div>
+
+
+</body>
+</html>
