@@ -1,210 +1,186 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-    /**
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-    z-index:99;
-}
-
-    
-    
-.navbar li {
-    float: left;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar  li.notactive a:hover {
-    background-color: #111;
-}
-    
-.activepage{
-    background-color: #4CAF50;   
-}
-    
-<!–- 
- <ul class="navbar">
-  <li class="activepage"><a href="#">Home</a></li>
-  <li class="notactive"><a href="/calander">Calander</a></li>
-  <li class="notactive"><a href="/resorces">Resorces</a></li>
-  <li class="notactive"><a href="/meetthegms">Meet the GMs</a></li>
-  <li class="notactive"><a href="/about">About</a></li>
-</ul> 
-–>    
-**/
-    
-.fullpage{
-    width: 100vl;
-    height: 100vh;
-    background-color: black;
-    position: relative;
-    object-fit:contain;
-    
-}
-    
-body{
-    overflow-x:visible;
-    
-}
-    
-.center{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color:yellow;
-    text-align: center;
-    font-size: 100px;
-    
-} 
- 
-.footer {
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
-.main{
-      display: inline-block;
-      width:100%;
-}
-.calander{
-    float: right;
-
-}
-#calander-small{
-    width:100%;
-    height:600px;
-    display: inline;
-}
-    
-#upcoming-events{
-    margin-bottom:0px;
-}
-.sizehandler{
-	object-fit:contain;
-    width:100%;
-    height:100%;
-
-}
-.fitscreen{
-    width: 100vl;
-    height: 100vh;
-    object-fit:contain;
-    background-color: black;
-
-}
-</style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
- <div style="background-color:black;">
-     <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0px">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#" style="padding:0px"><img src="https://drive.google.com/uc?id=19HmueVt6Y9mf9QRbg8H07VBd2w1XNwyW" height="100%"></a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="/calander">Calander</a></li>
-          <li><a href="/resorces">Resorces</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
+   <head>
+      <style>
+         /**
+         .navbar {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #333;
+         position: -webkit-sticky; 
+         position: sticky;
+         top: 0;
+         z-index:99;
+         }
+         .navbar li {
+         float: left;
+         }
+         .navbar li a {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         }
+         .navbar  li.notactive a:hover {
+         background-color: #111;
+         }
+         .activepage{
+         background-color: #4CAF50;   
+         }
+         <!–- 
+         <ul class="navbar">
+            <li class="activepage"><a href="#">Home</a></li>
+            <li class="notactive"><a href="/calander">Calander</a></li>
+            <li class="notactive"><a href="/resorces">Resorces</a></li>
+            <li class="notactive"><a href="/meetthegms">Meet the GMs</a></li>
+            <li class="notactive"><a href="/about">About</a></li>
+         </ul>
+         –>    
+         **/
+         .fullpage{
+         width: 100vl;
+         height: 100vh;
+         background-color: black;
+         position: relative;
+         object-fit:contain;
+         }
+         body{
+         overflow-x:visible;
+         }
+         .center{
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         color:yellow;
+         text-align: center;
+         font-size: 100px;
+         } 
+         .footer {
+         padding: 1rem;
+         background-color: #efefef;
+         text-align: center;
+         }
+         .main{
+         display: inline-block;
+         width:100%;
+         }
+         .calander{
+         float: right;
+         }
+         #calander-small{
+         width:100%;
+         height:600px;
+         display: inline;
+         }
+         #upcoming-events{
+         margin-bottom:0px;
+         }
+         .sizehandler{
+         object-fit:contain;
+         width:100%;
+         height:100%;
+         }
+         .fitscreen{
+         width: 100vl;
+         height: 100vh;
+         object-fit:contain;
+         background-color: black;
+         }
+      </style>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div style="background-color:black;">
+         <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0px">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#" style="padding:0px"><img src="https://drive.google.com/uc?id=19HmueVt6Y9mf9QRbg8H07VBd2w1XNwyW" height="100%"></a>
+               </div>
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="/calander">Calander</a></li>
+                  <li><a href="/resorces">Resorces</a></li>
+                  <li><a href="/about">About</a></li>
+               </ul>
+            </div>
+         </nav>
       </div>
-    </nav>
-</div>
-   
-    
-    
- 
- 
-<div class="fitscreen">
-    
-<div id="myCarousel" class="carousel slide sizehandler" data-ride="carousel">
-    
-    
-      <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner sizehandler">
+      <div class="fitscreen">
+         <div id="myCarousel" class="carousel slide sizehandler" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner sizehandler">
+               <div class="item active sizehandler">
+                  <img src="https://drive.google.com/uc?id=1uFuVrwVO9t5yABzcoA9X4LlfnBlAL1IV" class="slideshowimage sizehandler img-responsive img-fluid">
+               </div>
+               <div class="item sizehandler" >
+                  <img src="https://drive.google.com/uc?id=1Ld4ktxj4yw52v7r0cv0B0_8JmDArGMbt" class="slideshowimage sizehandler img-responsive img-fluid">
+               </div>
+               <div class="item sizehandler">
+                  <img src="https://drive.google.com/uc?id=1aMeHgfX6IV-PmOSwBxKHJGEZh34F7Rzo" class="slideshowimage sizehandler img-responsive img-fluid">
+               </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+         <h1 class="center">Welcome to<br>Hallowdawn LARP</h1>
+      </div>
+      
+      
+      
+      <div class="container-fluid">
+      <div class="row">
+      
+      	 <div class="col-md-8 col-sm-9">
+            <h2>About Us</h2>
+            <p>Hallowdawn LARP is a LARP group bla bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. </p>
+            <h2>How to Join</h2>
+            <p>Anyone can join Hallowdawn LARP. bla bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. </p>
+            <h2>Subscribe</h2>
+            <p>Subscribe to get emails about upcoming LARP events. You may unsubscribe at any time. (Not currently active) </p>
+            <input type="text" style="width: 200px; height: 20px; padding-right: 50px;"><input type="submit" style="margin-left: -50px; height: 25px; width: 50px; background: blue; color: white; border: 0; -webkit-appearance: none;">
+         </div>
+         
+         
+         
+         
+         <div class="col-md-4 col-sm-3">
+            <h3 id="upcoming-events">Upcoming Events (<a href="/calander">View All</a>)</h3>
+            <iframe id="calander-small" src="https://calendar.google.com/calendar/embed?title=Upcoming%20events&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=qfc3v9khg23573n6dgpnih6540%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FLos_Angeles" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+         </div>
+         
+      </div>
+      
+      
+      
+      
+      <footer class="page-footer font-small blue">
 
-    <div class="item active sizehandler">
-      <img src="https://drive.google.com/uc?id=1uFuVrwVO9t5yABzcoA9X4LlfnBlAL1IV" class="slideshowimage sizehandler img-responsive img-fluid">
-    </div>
 
-    <div class="item sizehandler" >
-      <img src="https://drive.google.com/uc?id=1Ld4ktxj4yw52v7r0cv0B0_8JmDArGMbt" class="slideshowimage sizehandler img-responsive img-fluid">
-    </div>
+  
+  
+  <a href="https://discord.gg/53hA4EG" target="_blank"><img width="40" src="https://discordapp.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg"></a>
 
-    <div class="item sizehandler">
-      <img src="https://drive.google.com/uc?id=1aMeHgfX6IV-PmOSwBxKHJGEZh34F7Rzo" class="slideshowimage sizehandler img-responsive img-fluid">
-    </div>
+</footer>
 
-    </div>
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-                    
-    </div>
 
-    
-    
-    
-    <h1 class="center">Welcome to<br>Hallowdawn LARP</h1>
-</div>
-
-    <div class="main">
-    
-    <div class="calander">
-        <h3 id="upcoming-events">Upcoming Events (<a href="/calander">View All</a>)</h3>
-        <iframe id="calander-small" src="https://calendar.google.com/calendar/embed?title=Upcoming%20events&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=qfc3v9khg23573n6dgpnih6540%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FLos_Angeles" style="border-width:0" frameborder="0" scrolling="no"></iframe>
-    </div>
-        
-    <div class="main-center">
-        <h2>About Us</h2>
-        <p>Hallowdawn LARP is a LARP group bla bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. </p>
-        <h2>How to Join</h2>
-        <p>Anyone can join Hallowdawn LARP. bla bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. bla bla bla bla. </p>
-        <h2>Subscribe</h2>
-        
-        <p>Subscribe to get emails about upcoming LARP events. You may unsubscribe at any time. (Not currently active) </p>
-        <input type="text" style="width: 200px; height: 20px; padding-right: 50px;"><input type="submit" style="margin-left: -50px; height: 25px; width: 50px; background: blue; color: white; border: 0; -webkit-appearance: none;">
-
-    </div>
-        
-    
-    </div>
-    <div class="footer"><a href="https://discord.gg/53hA4EG" target="_blank"><img width="40" src="https://discordapp.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg"></a></div>
-    
-    
-
-    
-
-</body>
+   </body>
 </html>
