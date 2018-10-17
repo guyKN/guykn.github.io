@@ -2,7 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--<link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css">-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -73,6 +72,17 @@ body{
 h1, h2, h3{
 	text-align:center;
 }
+	
+@media only screen and (min-width : 768px) {
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+}
+
+
 </style>
 </head>
 <body>
@@ -99,7 +109,7 @@ h1, h2, h3{
     	<h1>Resorces</h1>
 	</div>
     
-    <div class="row">
+    <div class="row row-eq-height">
     	
     	<div class="col-xs-3">
           <img src="https://www.freeiconspng.com/uploads/open-book-icon-1.png" width="20%" class="center-block">
