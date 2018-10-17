@@ -79,12 +79,16 @@ h1, h2, h3{
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
+    position: relative;
   }
+.float-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 }
 	
-.bottom-float{
-	float:bottom;
-}
+
 
 
 </style>
@@ -119,7 +123,7 @@ h1, h2, h3{
           <img src="https://www.freeiconspng.com/uploads/open-book-icon-1.png" width="20%" class="center-block">
           <h3>Rulebook</h3>
           <p style="text-align:center;"><i>All the rules you need to create a character and more. </i></p>
-	  <button type="button" class="btn btn-primary  btn-block">View The Rulebook</button>
+	  <button type="button" class="btn btn-primary  btn-block bottom-float">View The Rulebook</button>
          
    	</div>
     
